@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <header>
+                <div class="head_box">
+                    <p class="head_p">Имя</p>
+                    <input class="required" name="name" type="text" id="name_surname" placeholder="Bruce Reyes" />
+                </div>
+                <div class="head_box">
+                    <p class="head_p">Возраст</p>
+                    <input class="required" name="age" type="text" id="year_of_birth" placeholder="24" />
+                </div>
+                <button class="show_btn">Показать</button>
+            </header>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Имя студента</th>
+                    <th>Год рождения</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="data_table">
+
+            </tbody>    
+        </table>
+
+        <div class="modal">
+            <div class="modal__dialog">
+              <div class="modal__content">
+                <form action="#">
+                  <div data-close class="modal__close">&times;</div>
+                  <div class="modal__title">Редактирование данных!</div>
+                  <input id="edit_name" required placeholder="Введите имя" name="name" type="text" class="modal__input">
+                  <input id="edit_age" required placeholder="Введите год рождения" name="age" type="age" class="modal__input">
+                  <button id="saved_btn" class="btn btn_dark btn_min">Сохранить изменения</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+
+    <script src="./js/ui.js"></script>
+</body>
+</html>
